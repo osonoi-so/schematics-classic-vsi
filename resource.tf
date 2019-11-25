@@ -1,7 +1,7 @@
-resource "softlayer_virtual_guest" "khayama01" {
+resource "ibm_compute_vm_instance" "khayama01" {
     name = "khayama01"
-    domain = "softlayer.com"
-    ssh_keys = ["776719"]
+    domain = "ibmcloud.com"
+    ssh_keys = ["xxxxx"]
     image = "CENTOS_7_64"
     region = "tok02"
     public_network_speed = 100
