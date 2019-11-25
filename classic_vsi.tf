@@ -1,9 +1,3 @@
-#プロバイダーをSoftLayerに設定
-provider "softlayer" {
-    username = "xxxxxxxxxxx"
-    api_key = "xxxxxxxxxxx"
-}
-
 #リソースの設定
 # Virtual Server created with existing SSH Key already in SoftLayer
 resource "softlayer_virtual_guest" "khayama01" {
