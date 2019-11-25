@@ -1,5 +1,3 @@
-#リソースの設定
-# Virtual Server created with existing SSH Key already in SoftLayer
 resource "softlayer_virtual_guest" "khayama01" {
     name = "khayama01"
     domain = "softlayer.com"
