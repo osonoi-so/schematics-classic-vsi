@@ -1,8 +1,7 @@
-variable "softlayer_username" {}
-variable "softlayer_api_key" {}
+variable "ibm_sl_username" {}
+variable "ibm_sl_api_key" {}
 
 provider "ibm" {
-  region = "<region_name>"
-  softlayer_username = "${var.softlayer_username}"
-  softlayer_api_key  = "${var.softlayer_api_key}"
+  iaas_classic_username = "${var.ibm_sl_username}"
+  iaas_classic_api_key  = "${var.ibm_sl_api_key}"
 }
