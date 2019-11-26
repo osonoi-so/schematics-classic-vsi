@@ -8,7 +8,7 @@ resource "ibm_compute_vm_instance" "khayama-test" {
     transient = true
     local_disk = false
     private_network_only = false
-    flavor_key_name = "B1_2X8X25"
+    flavor_key_name = "B1_2X4X25"
     tags = ["user:khayama"]
     notes = "khayama-test"
 }
