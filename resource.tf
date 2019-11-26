@@ -5,6 +5,7 @@ resource "ibm_compute_vm_instance" "khayama-test" {
     datacenter = "tok02"
     network_speed = 100
     hourly_billing = true
+    transient = true
     local_disk = false
     private_network_only = false
     flavor_key_name = "B1_2X8X25"
