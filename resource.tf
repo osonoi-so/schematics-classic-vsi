@@ -26,5 +26,5 @@ resource "ibm_compute_vm_instance" "khayama-test" {
     flavor_key_name = "${var.flavor_key_name}"
     public_security_group_ids = [1287613]
     tags = ["user:khayama"]
-    notes = "khayama-test"
+    notes = "Managed by khayama's schematics"
 }
