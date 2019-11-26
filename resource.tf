@@ -10,7 +10,7 @@ variable "os_reference_code" {
 
 variable "flavor_key_name" {
   type        = "string"
-  default = "B1_1X1X25"
+  default = "B1_1X2X25"
 }
 
 resource "ibm_compute_vm_instance" "khayama-test" {
