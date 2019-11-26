@@ -9,6 +9,7 @@ resource "ibm_compute_vm_instance" "khayama-test" {
     local_disk = false
     private_network_only = false
     flavor_key_name = "B1_2X4X25"
+    public_security_group_ids = 1287613
     tags = ["user:khayama"]
     notes = "khayama-test"
 }
