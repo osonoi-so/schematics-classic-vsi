@@ -16,6 +16,12 @@ variable "flavor_key_name" {
   default = "B1_1X2X100"
 }
 
+variable "post_install_script_uri" {
+  type        = "string"
+  description = "The URI of the script to be downloaded and executed after installation is complete."
+  default = ""
+}
+
 resource "ibm_compute_vm_instance" "khayama-test" {
     hostname = "khayama-test"
     domain = "ibmcloud.com"
@@ -29,5 +35,6 @@ resource "ibm_compute_vm_instance" "khayama-test" {
     flavor_key_name = "${var.flavor_key_name}"
     public_security_group_ids = [1287613]
     tags = ["user:khayama"]
+    post_install_script_uri = ${var.post_install_script_uri}
     notes = "khayama's Resource created by Schematics"
 }
