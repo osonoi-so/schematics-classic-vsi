@@ -6,7 +6,7 @@ variable "datacenter" {
 
 variable "os_reference_code" {
   type        = "string"
-  description = "Ex) CENTOS_LATEST_64, CENTOS_7_64, CENTOS_6_64, REDHAT_LATEST, UBUNTU_LATEST, WIN_LATEST_64, WIN_2016-STD_64, ..."
+  description = "Ex) CENTOS_LATEST_64, CENTOS_7_64, REDHAT_LATEST, REDHAT_7_64, UBUNTU_LATEST, UBUNTU_18_64, WIN_LATEST_64, WIN_2019-STD_64, WIN_2016-STD_64, ..."
   default = "CENTOS_7_64"
 }
 
