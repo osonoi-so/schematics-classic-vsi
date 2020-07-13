@@ -22,7 +22,7 @@ variable "post_install_script_uri" {
   default = ""
 }
 
-resource "ibm_compute_vm_instance" "khayama-test" {
+resource "ibm_compute_vm_instance" "osonoi-test" {
     hostname = "vsi"
     domain = "osonoi.com"
     os_reference_code = "${var.os_reference_code}"
@@ -36,5 +36,5 @@ resource "ibm_compute_vm_instance" "khayama-test" {
     public_security_group_ids = [1287613]
     tags = ["user:khayama"]
     post_install_script_uri = "${var.post_install_script_uri}"
-    notes = "khayama's Resource created by Schematics"
+    notes = "osonoi's Resource created by Schematics"
 }
