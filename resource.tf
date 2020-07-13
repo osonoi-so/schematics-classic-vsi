@@ -33,8 +33,7 @@ resource "ibm_compute_vm_instance" "osonoi-test" {
     local_disk = false
     private_network_only = false
     flavor_key_name = "${var.flavor_key_name}"
-    public_security_group_ids = [1287613]
-    tags = ["user:khayama"]
+    tags = ["user:osonoi"]
     post_install_script_uri = "${var.post_install_script_uri}"
     notes = "osonoi's Resource created by Schematics"
 }
