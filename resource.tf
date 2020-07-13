@@ -23,8 +23,8 @@ variable "post_install_script_uri" {
 }
 
 resource "ibm_compute_vm_instance" "khayama-test" {
-    hostname = "khayama-test"
-    domain = "ibmcloud.com"
+    hostname = "vsi"
+    domain = "osonoi.com"
     os_reference_code = "${var.os_reference_code}"
     datacenter = "${var.datacenter}"
     network_speed = 100
